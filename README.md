@@ -35,3 +35,15 @@ virtual environment is a tool that helps to keep dependencies required by differ
 6. LiveScore REST API:
   - https://livescore6.p.rapidapi.com/matches/detail
   
+ #### Live Score Python REST API responce:
+ ```
+  import requests
+  url = "https://livescore6.p.rapidapi.com/matches/detail"
+  querystring = {"category":"soccer","id":"3065852","p":"1"}
+  headers = {
+      'x-rapidapi-host': "livescore6.p.rapidapi.com",
+      'x-rapidapi-key': "3cb3d7f419mshf461a81d16a695cp13d2e8jsnf5c2138ee874"
+      }
+  response = requests.request("GET", url, headers=headers, params=querystring)
+  print(response.text)
+  ```

@@ -27,7 +27,7 @@ virtual environment is a tool that helps to keep dependencies required by differ
   - https://tripadvisor1.p.rapidapi.com/answers/list
   
 4. COVID-19 data REST API:
-  -https://covid-19-data.p.rapidapi.com/help/countries
+  - https://covid-19-data.p.rapidapi.com/help/countries
   
 5. stripe REST API:
   - https://api.stripe.com

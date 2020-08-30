@@ -18,12 +18,11 @@ virtual environment is a tool that helps to keep dependencies required by differ
 ***REST determines how the API looks like. It stands for “Representational State Transfer”. It is a set of rules that developers follow when they create their API. One of these rules states that you should be able to get a piece of data (called a resource) when you link to a specific URL.***
 
 
-
 1.  Github’s REST API:
-  - (https://api.github.com)
+  - https://api.github.com
   
 2. Twitter’s REST API:
-  - (https://api.twitter.com)
+  - https://api.twitter.com
   
 3. TripAdvisor REST API:
   - https://tripadvisor1.p.rapidapi.com/answers/list
@@ -49,3 +48,6 @@ virtual environment is a tool that helps to keep dependencies required by differ
   response = requests.request("GET", url, headers=headers, params=querystring)
   print(response.text)
   ```
+  
+#### In this project i used Github’s public REST API, and also get user all response in JSON format ,then used it my own project.
+#### You can also used those public REST API for your project. :+1:

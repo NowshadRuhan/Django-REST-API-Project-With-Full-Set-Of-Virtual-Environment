@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+
+<h1 align="center">{{ text }}</h1>
+<h1 align="center">{{ text1 }}</h1>
+
+<form  method="POST">
+  <div class="form-group">
+      <label for="username">User Name : </label>
+      <input type="text" class="form-control" name="username" placeholder="User Name" required>
+  </div>
+  {% csrf_token %}
+  <input class="btn btn-primary" type="submit" name="submit" value="Get Github Info">
+</form>
+
+
+<div class="row">
+  {% if user %}
+  <div class="col-md-12">
+
+    {{ user }}
+  </div>
+
+  {% endif %}
+
+</div>
+
+
+
+{% endblock %}
